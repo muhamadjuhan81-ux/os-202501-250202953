@@ -112,16 +112,16 @@ Tools buat ngeliat penggunaan resource di Linux lebih gampang daripada Windows.
 
 ## Quiz
 1. Sebutkan tiga fungsi utama sistem operasi
-1. Tiga Fungsi Utama Sistem Operasi
+Tiga Fungsi Utama Sistem Operasi
 Sistem operasi itu seperti pengatur utama di balik layar komputer kita, yang punya peran krusial untuk menjaga semuanya berjalan lancar. Dari yang saya tahu, tiga fungsi utamanya adalah:
- pertama, manajemen proses, di mana OS mengatur bagaimana program-program berjalan bersamaan, seperti menentukan urutan eksekusi supaya nggak bentrok.
- Kedua, manajemen memori, yang bertanggung jawab membagi bagi ruang RAM untuk aplikasi tanpa saling ganggu, termasuk trik virtual memory biar terasa lebih luas.
-  Ketiga, manajemen perangkat I/O, yang mengurus komunikasi dengan hardware seperti hard disk atau printer, lewat driver supaya semuanya aman dan efisien
+-pertama, manajemen proses, di mana OS mengatur bagaimana program-program berjalan bersamaan, seperti menentukan urutan eksekusi supaya nggak bentrok.
+-Kedua, manajemen memori, yang bertanggung jawab membagi bagi ruang RAM untuk aplikasi tanpa saling ganggu, termasuk trik virtual memory biar terasa lebih luas.
+-Ketiga, manajemen perangkat I/O, yang mengurus komunikasi dengan hardware seperti hard disk atau printer, lewat driver supaya semuanya aman dan efisien
 2.  Jelaskan perbedaan antara *kernel mode* dan *user mode
 Perbedaan antara Kernel Mode dan User Mode
- kalau bicara kernel mode dan user mode, ini soal tingkat akses yang dibedakan OS untuk keamanan. Kernel mode itu seperti mode "superuser" di mana bagian inti OS ,kernel, bisa akses segala hal, termasuk hardware langsung dan instruksi CPU yang sensitif. Ini dipakai untuk tugas penting seperti handling interrupt atau kelola memori, tapi kalau ada kesalahan, bisa bikin seluruh sistem ambruk. Sementara user mode lebih seperti mode "tamu" untuk aplikasi sehari-hari kita, seperti browser atau word processor. Di sini, akses dibatasi banget; aplikasi nggak boleh sentuh hardware langsung, harus lewat permintaan ke kernel via system call. Keuntungannya, kalau ada bug di user mode, cuma proses itu yang kena, sistem tetap aman. Jadi, intinya, kernel mode powerful tapi berisiko, user mode lebih aman untuk isolasi.
+-kalau bicara kernel mode dan user mode, ini soal tingkat akses yang dibedakan OS untuk keamanan. Kernel mode itu seperti mode "superuser" di mana bagian inti OS ,kernel, bisa akses segala hal, termasuk hardware langsung dan instruksi CPU yang sensitif. Ini dipakai untuk tugas penting seperti handling interrupt atau kelola memori, tapi kalau ada kesalahan, bisa bikin seluruh sistem ambruk. Sementara user mode lebih seperti mode "tamu" untuk aplikasi sehari-hari kita, seperti browser atau word processor. Di sini, akses dibatasi banget; aplikasi nggak boleh sentuh hardware langsung, harus lewat permintaan ke kernel via system call. Keuntungannya, kalau ada bug di user mode, cuma proses itu yang kena, sistem tetap aman. Jadi, intinya, kernel mode powerful tapi berisiko, user mode lebih aman untuk isolasi.
 3.Sebutkan contoh OS dengan arsitektur monolithic dan microkernel.
-Contoh OS dengan Arsitektur Monolithic dan Microkernel
+-Contoh OS dengan Arsitektur Monolithic dan Microkernel
 Arsitektur kernel ini menentukan bagaimana OS dibangun, apakah semuanya digabung atau dipisah-pisah. Untuk monolithic, di mana semua komponen seperti driver dan file system digabung dalam satu blok kernel besar yang efisien tapi agak susah diubah, contohnya Linux yang kernelnya monolitik murni dan populer banget serta Windows NT, meskipun ada elemen hybrid, dasarnya tetap monolithic. Kalau microkernel, kernelnya minimalis, cuma urus dasar-dasar seperti komunikasi proses, dan sisanya seperti driver berjalan terpisah sebagai proses biasa, bikin lebih modular dan stabil. Contohnya Minix, yang sering dipakai buat belajar karena desainnya sederhana, dan QNX, yang dipake di sistem real-time seperti mobil atau medis karena tahan banting.
 
 
