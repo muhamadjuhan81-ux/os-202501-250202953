@@ -55,11 +55,19 @@ Sertakan screenshot hasil percobaan atau diagram:
 
 ## Analisis
 - Makna Hasil Percobaan
+
 Dari hasil percobaan yang dilakukan, dapat dipahami bahwa sistem operasi memiliki peran penting sebagai pengelola seluruh aktivitas komputer. Percobaan menunjukkan bagaimana program pengguna tidak dapat berinteraksi langsung dengan perangkat keras, melainkan harus melalui sistem operasi. Hal ini terjadi karena setiap instruksi dari program akan diteruskan ke kernel melalui mekanisme system call. Proses tersebut membuktikan bahwa sistem operasi berfungsi sebagai penghubung utama antara pengguna dan sumber daya komputer. Ketika program menjalankan perintah seperti membaca file atau mencetak teks ke layar, kernel yang mengatur jalannya operasi tersebut agar berjalan dengan aman dan sesuai aturan. Dengan demikian, percobaan ini membantu mahasiswa memahami bagaimana sistem operasi bekerja di balik layar untuk menjalankan perintah yang tampak sederhana di sisi pengguna.Selain itu, percobaan juga menunjukkan pentingnya lapisan keamanan antara user mode dan kernel mode. Pembatasan ini memastikan bahwa program tidak dapat merusak sistem atau mengakses bagian sensitif dari perangkat keras secara langsung. Hal ini menjadi bukti bahwa sistem operasi tidak hanya mengatur sumber daya, tetapi juga menjaga kestabilan dan keamanan komputer secara keseluruhan.
+
 - Hubungkan hasil dengan teori
+
 Hasil percobaan yang diperoleh selaras dengan teori dasar mengenai fungsi utama sistem operasi. Secara teori, sistem operasi bertugas mengatur penggunaan sumber daya komputer dan menyediakan antarmuka bagi program untuk berinteraksi dengan perangkat keras. Dalam praktiknya, hal ini terlihat jelas melalui mekanisme system call, di mana kernel menjadi perantara antara program pengguna dan perangkat keras.Percobaan ini juga membuktikan teori bahwa kernel bekerja dalam mode istimewa (kernel mode), sementara program berjalan di mode pengguna (user mode). Ketika program membutuhkan layanan tertentu, sistem akan berpindah dari user mode ke kernel mode untuk menjalankan instruksi, kemudian kembali lagi setelah selesai. Mekanisme ini sesuai dengan konsep keamanan dan efisiensi yang dijelaskan dalam teori sistem operasi. Dengan demikian, hasil praktikum ini memperkuat pemahaman bahwa fungsi utama sistem operasi, peran kernel, dan mekanisme system call saling berkaitan erat. Tanpa system call, program pengguna tidak akan dapat memanfaatkan layanan yang disediakan oleh sistem operasi secara aman dan terkontrol.
 
-- Apa perbedaan hasil di lingkungan OS berbeda (Linux vs Windows)?  
+- Apa perbedaan hasil di lingkungan OS berbeda (Linux vs Windows)
+
+Secara umum, percobaan system call di Linux dan Windows menghasilkan fungsi yang sama, yaitu sebagai sarana bagi program untuk berinteraksi dengan sistem operasi. Namun, cara kerja dan implementasinya memiliki beberapa perbedaan yang cukup jelas. 
+Pada sistem Linux, system call bersifat lebih terbuka dan terdokumentasi dengan baik, sehingga pengguna atau pengembang dapat dengan mudah melihat daftar system call yang tersedia beserta cara kerjanya. Linux juga memberikan akses yang lebih langsung ke level kernel, sehingga hasil percobaan biasanya dapat diamati secara lebih detail, misalnya melalui penggunaan terminal atau perintah sistem seperti strace untuk menelusuri aktivitas system call yang terjadi. Sementara pada sistem Windows, mekanisme system call cenderung lebih tertutup dan kompleks. Akses langsung ke level kernel dibatasi, dan sebagian besar interaksi dilakukan melalui API (Application Programming Interface) milik Windows. Akibatnya, saat percobaan dilakukan di Windows, hasil yang terlihat tidak sejelas di Linux karena banyak proses berlangsung di latar belakang tanpa dapat diamati secara langsung.
+Dengan demikian, perbedaan utama antara keduanya terletak pada tingkat keterbukaan, cara pemanggilan system call, serta kemudahan observasi hasilnya. Linux lebih transparan dan mudah dipelajari untuk keperluan praktikum sistem operasi, sedangkan Windows lebih fokus pada keamanan dan kestabilan dengan membatasi akses langsung ke kernel.
+
 
 ---
 
