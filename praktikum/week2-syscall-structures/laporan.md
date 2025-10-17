@@ -83,12 +83,18 @@ Fungsi utama system call adalah sebagai penghubung antara program pengguna denga
 
 2. Sebutkan 4 kategori system call yang umum digunakan.
 
-Secara umum, system call dapat dibagi menjadi beberapa kategori utama, di antaranya:
--Manajemen proses – digunakan untuk membuat, menjalankan, menghentikan, dan mengatur proses.
+Secara umum, system call dapat dibagi menjadi beberapa kategori utama, di antaranya
+
+-Manajemen proses 
+digunakan untuk membuat, menjalankan, menghentikan, dan mengatur proses.
+
 -Manajemen berkas
 berkaitan dengan operasi pada file seperti membuka, membaca, menulis, dan menutup file.
+
+
 -Manajemen memori
  digunakan untuk mengatur alokasi dan pembebasan ruang memori yang digunakan oleh proses.
+ 
 -Komunikasi antar proses
  berfungsi untuk pertukaran data atau koordinasi antar proses.
 
