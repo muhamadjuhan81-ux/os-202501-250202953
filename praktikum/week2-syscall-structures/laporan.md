@@ -12,7 +12,7 @@ Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
 ---
 
 ## Tujuan
-Tujuan dari praktikum ini adalah untuk memahami bagaimana sistem operasi bekerja dalam mengatur proses yang berjalan di komputer. Melalui percobaan ini, mahasiswa diharapkan bisa menjelaskan fungsi utama sistem operasi, mengenal peran kernel sebagai bagian inti yang mengatur jalannya sistem, serta memahami bagaimana system call digunakan sebagai penghubung antara program pengguna dengan layanan yang ada di dalam sistem operasi. Dengan memahami hal tersebut, mahasiswa dapat mengetahui bagaimana komunikasi antara user mode dan kernel mode berlangsung saat sebuah program dijalankan.
+Tujuan dari praktikum ini adalah untuk memahami bagaimana system call bekerja di dalam sistem operasi. Melalui percobaan ini, mahasiswa diharapkan dapat menjelaskan konsep dan fungsi system call, mengenali jenis-jenisnya beserta fungsinya, serta mengamati bagaimana proses perpindahan dari user mode ke kernel mode terjadi saat sebuah system call dipanggil. Selain itu, mahasiswa juga belajar menggunakan beberapa perintah di Linux untuk menampilkan dan menganalisis aktivitas system call yang dijalankan oleh suatu program.
 
 ---
 
