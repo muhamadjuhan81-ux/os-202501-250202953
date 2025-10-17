@@ -77,12 +77,24 @@ Tuliskan 2–3 poin kesimpulan dari praktikum ini.
 ---
 
 ## Quiz
-1. [Pertanyaan 1]  
-   **Jawaban:**  
-2. [Pertanyaan 2]  
-   **Jawaban:**  
-3. [Pertanyaan 3]  
-   **Jawaban:**  
+1. Apa fungsi utama system call dalam sistem operasi ?
+
+Fungsi utama system call adalah sebagai penghubung antara program pengguna dengan sistem operasi. Melalui system call, program dapat meminta layanan tertentu dari kernel, seperti membaca atau menulis file, membuat proses baru, mengalokasikan memori, atau berinteraksi dengan perangkat keras. Dengan adanya mekanisme ini, program dapat menjalankan operasi penting tanpa harus mengetahui detail teknis dari sistem operasi atau perangkat keras yang digunakan. Selain itu, system call juga berperan menjaga keamanan dan kestabilan sistem dengan membatasi akses langsung dari program ke sumber daya inti komputer.
+
+2. Sebutkan 4 kategori system call yang umum digunakan.
+
+Secara umum, system call dapat dibagi menjadi beberapa kategori utama, di antaranya:
+-Manajemen proses – digunakan untuk membuat, menjalankan, menghentikan, dan mengatur proses.
+-Manajemen berkas
+berkaitan dengan operasi pada file seperti membuka, membaca, menulis, dan menutup file.
+-Manajemen memori
+ digunakan untuk mengatur alokasi dan pembebasan ruang memori yang digunakan oleh proses.
+-Komunikasi antar proses
+ berfungsi untuk pertukaran data atau koordinasi antar proses.
+
+4. Mengapa system call tidak bisa dipanggil langsung oleh user program?
+
+System call tidak bisa dipanggil langsung oleh program pengguna karena alasan keamanan dan proteksi sistem. Program yang berjalan di user mode tidak memiliki izin untuk mengakses sumber daya penting seperti memori kernel atau perangkat keras. Jika akses ini dibiarkan terbuka, maka kesalahan kecil dalam program bisa merusak seluruh sistem atau menyebabkan kebocoran data. Oleh karena itu, setiap permintaan dari program ke sistem operasi harus melewati mekanisme system call. Proses ini memastikan bahwa kernel dapat memeriksa dan memvalidasi permintaan tersebut sebelum dijalankan. Dengan cara ini, sistem tetap aman, stabil, dan terlindungi dari tindakan yang tidak diinginkan.
 
 ---
 
