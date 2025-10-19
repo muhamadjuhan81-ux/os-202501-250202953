@@ -73,7 +73,12 @@ Dengan demikian, perbedaan utama antara keduanya terletak pada tingkat keterbuka
 ---
 
 ## Kesimpulan
-Tuliskan 2–3 poin kesimpulan dari praktikum ini.
+
+1. Dari hasil praktikum yang dilakukan, dapat disimpulkan bahwa system call berperan penting sebagai jembatan antara program pengguna dengan kernel sistem operasi. Melalui system call, program dapat meminta layanan tertentu dari sistem, seperti membaca file, menulis data, atau membuat proses baru tanpa harus berinteraksi langsung dengan perangkat keras.
+
+2. Percobaan menggunakan perintah strace di Linux menunjukkan bahwa setiap program sebenarnya menjalankan banyak system call di balik layar. Hal ini juga memperlihatkan adanya perpindahan kerja dari user mode ke kernel mode setiap kali system call terjadi, yang bertujuan menjaga keamanan serta kestabilan sistem.
+
+3. Secara keseluruhan, praktikum ini membantu memahami bagaimana sistem operasi mengatur komunikasi antara pengguna dan perangkat keras melalui peran kernel dan system call.
 
 ---
 
