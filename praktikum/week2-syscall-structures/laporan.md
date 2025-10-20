@@ -39,7 +39,9 @@ Tujuan dari praktikum ini adalah untuk memahami bagaimana system call bekerja di
 
 ## Kode / Perintah
 strace ls
+
 strace -e trace=open,read,write,close cat /etc/passwd
+
 dmesg | tail -n 10
 
 ---
