@@ -49,8 +49,8 @@ dmesg | tail -n 10
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
 ![Screenshot hasil](screenshots/strace.png)
-[Screenshot hasil](screenshots/syscall.is.png)
-[Screenshot hasil](screenshots/p.png)
+[Screenshot hasil](screenshots/syscall_is.png)
+[Screenshot hasil](screenshots/dmesg.png)
 
 ---
 
