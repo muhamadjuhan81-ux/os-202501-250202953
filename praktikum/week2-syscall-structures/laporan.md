@@ -104,7 +104,7 @@ berkaitan dengan operasi pada file seperti membuka, membaca, menulis, dan menutu
 -Komunikasi antar proses
  berfungsi untuk pertukaran data atau koordinasi antar proses.
 
-4. Mengapa system call tidak bisa dipanggil langsung oleh user program?
+3. Mengapa system call tidak bisa dipanggil langsung oleh user program?
 
 System call tidak bisa dipanggil langsung oleh program pengguna karena alasan keamanan dan proteksi sistem. Program yang berjalan di user mode tidak memiliki izin untuk mengakses sumber daya penting seperti memori kernel atau perangkat keras. Jika akses ini dibiarkan terbuka, maka kesalahan kecil dalam program bisa merusak seluruh sistem atau menyebabkan kebocoran data. Oleh karena itu, setiap permintaan dari program ke sistem operasi harus melewati mekanisme system call. Proses ini memastikan bahwa kernel dapat memeriksa dan memvalidasi permintaan tersebut sebelum dijalankan. Dengan cara ini, sistem tetap aman, stabil, dan terlindungi dari tindakan yang tidak diinginkan.
 
