@@ -59,6 +59,9 @@ Sertakan screenshot hasil percobaan atau diagram:
 ---
 
 ## Analisis
+| No. | Perintah | Output | Penjelasan |
+|---|----|---|---|
+
 - Makna Hasil Percobaan
 
 Dari hasil percobaan yang dilakukan, dapat dipahami bahwa setiap program yang dijalankan di sistem operasi sebenarnya memanggil sejumlah system call untuk berinteraksi dengan kernel. Saat perintah strace dijalankan, terlihat berbagai system call yang digunakan, seperti open, read, write, dan exit. Hal ini menunjukkan bahwa meskipun program terlihat sederhana, sistem operasi tetap melakukan serangkaian proses di belakang layar agar instruksi tersebut dapat dieksekusi dengan benar. Percobaan ini juga memperlihatkan bagaimana terjadi perpindahan dari user mode ke kernel mode saat system call dijalankan. Proses ini penting untuk menjaga keamanan dan kestabilan sistem, karena mencegah program pengguna mengakses perangkat keras atau sumber daya penting secara langsung. Dengan memahami hasil percobaan ini, mahasiswa dapat melihat peran nyata kernel dalam menangani permintaan dari program pengguna.
