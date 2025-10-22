@@ -54,7 +54,7 @@ Sertakan screenshot hasil percobaan atau diagram:
 
 ![Screenshot hasil](screenshots/dmesg.png)
 
-![Screenshot hasil](screenshots/.png)
+![Screenshot hasil](screenshots/diagram_week2.png)
 
 ---
 
