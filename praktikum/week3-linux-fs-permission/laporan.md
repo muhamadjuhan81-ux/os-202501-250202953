@@ -29,7 +29,7 @@ Tujuan dari praktikum ini adalah untuk memberikan pemahaman dan keterampilan kep
 
  Setiap file dan direktori di Linux memiliki hak akses yang mengatur siapa yang boleh membaca, menulis, atau mengeksekusi file tersebut. Pengaturan dilakukan dengan perintah chmod untuk menjaga keamanan dan pengelolaan data.
 
-Kepemilikan File (Ownership)
+-Kepemilikan File (Ownership)
 
  File di Linux memiliki pemilik (user) dan grup (group). Perintah chown digunakan untuk mengubah kepemilikan tersebut agar pengelolaan file sesuai dengan hak pengguna yang berwenang.
 
