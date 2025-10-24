@@ -69,9 +69,13 @@ Sertakan screenshot hasil percobaan atau diagram:
 ---
 
 ## Analisis
-- Jelaskan makna hasil percobaan.  
-- Hubungkan hasil dengan teori (fungsi kernel, system call, arsitektur OS).  
-- Apa perbedaan hasil di lingkungan OS berbeda (Linux vs Windows)?  
+
+Berdasarkan hasil praktikum, dapat disimpulkan bahwa pengelolaan file dan direktori di sistem operasi Linux sangat bergantung pada pemahaman terhadap perintah dasar serta sistem izin aksesnya. Melalui penggunaan perintah seperti ls, pwd, cd, dan cat, saya dapat memahami cara berpindah dan menampilkan isi direktori dengan lebih efisien.
+Penerapan perintah chmod juga memberikan pemahaman tentang pentingnya pengaturan hak akses agar file tidak disalahgunakan oleh pengguna lain. Dengan mengetahui arti setiap kombinasi permission seperti rwxr-xr--, saya dapat menentukan izin yang sesuai untuk setiap kebutuhan.
+
+Selain itu, perintah chown membantu saya memahami konsep kepemilikan file, di mana pengaturan pemilik dan grup sangat berpengaruh terhadap keamanan dan pengelolaan sistem.
+Secara keseluruhan, praktikum ini membantu saya memahami bahwa pengelolaan file di Linux tidak hanya sekadar menyimpan data, tetapi juga melibatkan pengaturan hak akses dan kepemilikan yang tepat agar sistem tetap aman, teratur, dan efisien.
+
 
 ---
 
