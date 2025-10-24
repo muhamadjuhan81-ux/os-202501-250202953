@@ -81,12 +81,24 @@ Tuliskan 2–3 poin kesimpulan dari praktikum ini.
 ---
 
 ## Quiz
-1. [Pertanyaan 1]  
-   **Jawaban:**  
-2. [Pertanyaan 2]  
-   **Jawaban:**  
-3. [Pertanyaan 3]  
-   **Jawaban:**  
+1. Fungsi dari perintah chmod
+   
+Perintah chmod berfungsi untuk mengatur atau mengubah hak akses pada file maupun direktori di sistem Linux. Dengan perintah ini, kita bisa menentukan siapa yang diperbolehkan untuk membaca, menulis, atau menjalankan suatu file. Tujuan utamanya adalah untuk menjaga keamanan data agar hanya pengguna yang berhak saja yang bisa melakukan tindakan tertentu terhadap file tersebut.
+
+2. Arti dari kode permission rwxr-xr--
+
+Kode rwxr-xr-- menunjukkan pembagian hak akses file menjadi tiga bagian utama:
+
+rwx : untuk pemilik (user), artinya pemilik file dapat membaca, mengedit, dan menjalankan file tersebut.
+
+r-x : untuk grup (group), artinya anggota grup hanya bisa membaca dan menjalankan file, tetapi tidak dapat mengubah isinya.
+
+r-- : untuk pengguna lain (others), artinya mereka hanya dapat melihat atau membaca file tanpa bisa mengedit ataupun menjalankannya.
+
+3. Perbedaan antara chown dan chmod
+
+Perintah chown digunakan untuk mengganti kepemilikan suatu file atau direktori, baik dari sisi pengguna (user) maupun grupnya. Sedangkan chmod digunakan untuk mengubah hak akses terhadap file, seperti siapa yang boleh membaca, menulis, atau menjalankannya. Jadi, chown mengatur siapa pemilik file, sedangkan chmod mengatur apa yang bisa dilakukan terhadap file tersebut.
+ 
 
 ---
 
