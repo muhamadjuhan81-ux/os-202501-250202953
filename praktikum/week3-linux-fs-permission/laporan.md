@@ -80,7 +80,11 @@ Secara keseluruhan, praktikum ini membantu saya memahami bahwa pengelolaan file 
 ---
 
 ## Kesimpulan
-Tuliskan 2–3 poin kesimpulan dari praktikum ini.
+-Dari praktikum ini, saya belajar cara menggunakan perintah dasar Linux seperti ls, pwd, cd, dan cat untuk menavigasi serta mengelola file dan direktori dengan lebih efektif.
+
+-Saya juga memahami bagaimana perintah chmod dan chown digunakan untuk mengatur hak akses dan kepemilikan file, sehingga keamanan dan pengelolaan sistem dapat terjaga dengan baik.
+
+-Secara keseluruhan, praktikum ini membuat saya lebih paham tentang cara kerja sistem file di Linux dan pentingnya pengaturan izin serta kepemilikan dalam menjaga keteraturan sistem.
 
 ---
 
@@ -107,9 +111,7 @@ Perintah chown digunakan untuk mengganti kepemilikan suatu file atau direktori, 
 ---
 
 ## Refleksi Diri
-Tuliskan secara singkat:
-- Apa bagian yang paling menantang minggu ini?  
-- Bagaimana cara Anda mengatasinya?  
+
 
 ---
 
