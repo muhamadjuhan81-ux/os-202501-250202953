@@ -64,6 +64,8 @@ ls -l percobaan.txt
 Sertakan screenshot hasil percobaan atau diagram:
 ![Screenshot hasil](screenshots/example.png)
 
+![Screenshot hasil](screenshots/screenshoot_week_3[1].png)
+
 ---
 
 ## Analisis
