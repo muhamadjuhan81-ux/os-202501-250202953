@@ -1,6 +1,6 @@
 
 # Laporan Praktikum Minggu 4
-Topik: proses user
+Topik: Manajemen Proses dan User di Linux
 
 ---
 
@@ -12,11 +12,9 @@ Topik: proses user
 ---
 
 ## Tujuan
-Tuliskan tujuan praktikum minggu ini.  
-Contoh:  
-> Mahasiswa mampu menjelaskan fungsi utama sistem operasi dan peran kernel serta system call.
 
----
+Tujuan dari praktikum ini adalah untuk memahami lebih dalam bagaimana sistem operasi Linux mengelola proses dan pengguna. Melalui kegiatan praktikum, saya belajar bagaimana cara menampilkan dan memantau proses yang sedang berjalan, termasuk memahami status dari setiap proses yang ada di sistem. Selain itu, saya juga mempelajari bagaimana membuat dan mengatur user serta group menggunakan perintah dasar seperti adduser, passwd, id, dan groups. Praktikum ini juga memberikan pemahaman tentang bagaimana cara menghentikan atau mengontrol proses tertentu melalui PID dengan menggunakan perintah seperti kill atau top. Dari keseluruhan kegiatan, saya dapat memahami hubungan antara manajemen user dengan keamanan sistem, di mana pengaturan hak akses dan pengelolaan akun pengguna memiliki peran penting dalam menjaga stabilitas serta keamanan sistem operasi secara keseluruhan.
+
 
 ## Dasar Teori
 Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
