@@ -42,8 +42,8 @@ dmesg | head
 ---
 
 ## Hasil Eksekusi
-Sertakan screenshot hasil percobaan atau diagram:
-![Screenshot hasil](screenshots/example.png)
+
+![Screenshot hasil](screenshots/week4_juhan[1].png)
 
 ---
 
