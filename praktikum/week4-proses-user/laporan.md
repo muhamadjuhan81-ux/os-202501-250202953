@@ -43,6 +43,8 @@ dmesg | head
 
 ![Screenshot hasil](screenshots/week4_juhan[1].png)
 
+![screenshot hasil](sreenshot/week4_juhan_4.png)
+
 ---
 
 ## Analisis
