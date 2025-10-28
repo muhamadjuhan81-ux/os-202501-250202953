@@ -41,9 +41,11 @@ dmesg | head
 
 ## Hasil Eksekusi
 
-![Screenshot hasil](screenshots/week4_juhan[1].png)
+![Screenshot hasil](screenshots/week4.juhan.3.png)
 
-![screenshot hasil](sreenshot/week4_juhan_4.png)
+![Screenshot hasil](screenshots/week4.juhan.4.png)
+
+![Screenshot hasil](screenshots/week4.juhan.5.png)
 
 ---
 
