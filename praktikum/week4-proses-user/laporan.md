@@ -17,7 +17,18 @@ Tujuan dari praktikum ini adalah untuk memahami lebih dalam bagaimana sistem ope
 
 
 ## Dasar Teori
-Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
+1. Manajemen Proses di Linux
+
+Dalam Linux, setiap program yang dijalankan disebut proses, dan masing-masing punya ID unik yang disebut PID. Sistem operasi bertugas untuk mengatur jalannya proses-proses ini agar tidak saling mengganggu. Melalui perintah seperti ps, top, dan kill, saya bisa melihat proses yang sedang aktif, memantau kinerjanya, dan menghentikan proses tertentu jika diperlukan.
+
+2. Manajemen User dan Group
+
+Linux adalah sistem operasi multi-user, artinya beberapa pengguna bisa memakai sistem secara bersamaan. Karena itu, penting untuk mengatur akun user dan grup agar setiap pengguna memiliki hak akses sesuai kebutuhannya. Perintah seperti adduser, passwd, id, dan groups digunakan untuk membuat akun, mengatur kata sandi, dan menampilkan informasi pengguna.
+
+3. Hak Akses dan Keamanan Sistem
+
+Setiap file dan folder di Linux punya pengaturan izin seperti read, write, dan execute. Pengaturan ini menentukan siapa saja yang bisa mengakses atau mengubah file tersebut. Dengan manajemen hak akses yang baik, sistem bisa tetap aman dan terhindar dari penyalahgunaan oleh pengguna yang tidak berwenang.
+
 
 ---
 
@@ -30,11 +41,19 @@ Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
 ---
 
 ## Kode / Perintah
-Tuliskan potongan kode atau perintah utama:
+
 ```bash
-uname -a
-lsmod | head
-dmesg | head
+whoami
+id
+groups
+sudo adduser praktikan
+sudo passwd praktikan
+ps aux | head -10
+top -n 1
+sleep 1000 &
+ps aux | grep sleep
+kill <PID>
+pstree -p | head -20
 ```
 
 ---
