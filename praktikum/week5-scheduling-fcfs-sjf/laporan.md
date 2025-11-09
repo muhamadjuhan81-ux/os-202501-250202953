@@ -49,7 +49,7 @@ Turnaround Time (TAT) = WT + Burst Time
 
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
-![Screenshot hasil](screenshots/FCFS.png)
+![Screenshot hasil](screenshots/FCFS.1.png)
 
 ![Screenshot hasil](screenshots/SJF.png)
 
