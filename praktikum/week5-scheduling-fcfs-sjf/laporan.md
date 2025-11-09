@@ -40,9 +40,9 @@ Tujuan dari praktikum ini adalah untuk memahami bagaimana sistem operasi mengatu
 ## Kode / Perintah
 Tuliskan potongan kode atau perintah utama:
 ```bash
-uname -a
-lsmod | head
-dmesg | head
+Waiting Time (WT) = waktu mulai eksekusi - Arrival Time
+Turnaround Time (TAT) = WT + Burst Time
+
 ```
 
 ---
