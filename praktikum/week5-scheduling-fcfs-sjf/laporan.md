@@ -45,7 +45,12 @@ dmesg | head
 Sertakan screenshot hasil percobaan atau diagram:
 ![Screenshot hasil](screenshots/example.png)
 
----
+
+<img width="813" height="157" alt="image" src="https://github.com/user-attachments/assets/f0d1def2-112a-4fb7-a52a-deb9a178cfed" />
+
+
+						
+
 
 ## Analisis
 - Jelaskan makna hasil percobaan.  
