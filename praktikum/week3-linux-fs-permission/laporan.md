@@ -36,10 +36,23 @@ Tujuan dari praktikum ini adalah untuk memberikan pemahaman dan keterampilan kep
 ---
 
 ## Langkah Praktikum
-1. Langkah-langkah yang dilakukan.  
-2. Perintah yang dijalankan.  
-3. File dan kode yang dibuat.  
-4. Commit message yang digunakan.
+
+1. Masuk ke direktori kerja praktikum/week3-linux-fs-permission/.
+
+2. Menjalankan perintah dasar Linux seperti pwd, ls -l, cd, dan ls -a untuk melihat lokasi dan isi direktori.
+
+3. Membaca sebagian isi file /etc/passwd menggunakan cat untuk melihat informasi user pada sistem.
+
+4. Membuat file baru bernama percobaan.txt yang berisi identitas diri, kemudian memeriksa permission-nya.
+
+5. Mengubah permission file menggunakan chmod 600.
+
+6. Mengubah pemilik file dengan chown jika memiliki akses sudo.
+
+7. Mengambil screenshot hasil eksekusi terminal dan menyimpannya pada folder screenshots/.
+
+8. Melakukan git add, git commit, dan git push untuk mengunggah hasil ke GitHub.
+
 
 ---
 
