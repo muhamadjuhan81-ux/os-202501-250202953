@@ -87,12 +87,17 @@ Secara umum, hasil percobaan memperlihatkan bahwa Round Robin lebih adil, sedang
 ---
 
 ## Quiz
-1. [Pertanyaan 1]  
-   **Jawaban:**  
-2. [Pertanyaan 2]  
-   **Jawaban:**  
-3. [Pertanyaan 3]  
-   **Jawaban:**  
+1. Apa perbedaan utama antara Round Robin dan Priority Scheduling?
+
+Round Robin mengeksekusi semua proses secara bergiliran dengan waktu terbatas, tanpa memperhatikan prioritas. Sedangkan Priority Scheduling mengeksekusi proses berdasarkan tingkat prioritas, proses dengan prioritas lebih tinggi dijalankan lebih dulu.
+
+2. Apa pengaruh besar/kecilnya time quantum terhadap performa sistem?
+
+Time quantum yang terlalu kecil membuat CPU sering berpindah antarproses, sehingga sistem terasa lambat. Kalau terlalu besar, proses harus menunggu lebih lama dan Round Robin jadi mirip FCFS.
+
+3. Mengapa algoritma Priority dapat menyebabkan starvation?
+
+Karena proses dengan prioritas rendah bisa terus menunggu jika selalu ada proses prioritas tinggi, sehingga ada kemungkinan tidak pernah dijalankan
 
 ---
 
