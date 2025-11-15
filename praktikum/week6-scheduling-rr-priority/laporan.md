@@ -5,29 +5,43 @@ Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
 ---
 
 ## Identitas
-- **Nama**  : [Nama Mahasiswa]  
-- **NIM**   : [NIM Mahasiswa]  
-- **Kelas** : [Kelas]
+- **Nama**  : Muhamad Juhan
+- **NIM**   : 250202953
+- **Kelas** : 1 IKRB
 
 ---
 
 ## Tujuan
-Tuliskan tujuan praktikum minggu ini.  
-Contoh:  
-> Mahasiswa mampu menjelaskan fungsi utama sistem operasi dan peran kernel serta system call.
+
+Tujuan dari praktikum ini adalah untuk memahami bagaimana algoritma Round Robin dan Priority Scheduling bekerja dalam mengatur proses pada CPU. Melalui percobaan ini, saya menghitung waiting time dan turnaround time dari setiap proses, kemudian membandingkan hasil keduanya. Saya juga menganalisis bagaimana ukuran time quantum dan tingkat prioritas dapat memengaruhi keadilan eksekusi proses dan kinerja sistem. Pada akhirnya, praktikum ini membantu saya melihat algoritma mana yang lebih efisien dan kapan masing-masing algoritma lebih tepat digunakan.
 
 ---
 
 ## Dasar Teori
-Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
+
+1. Penjadwalan CPU adalah mekanisme sistem operasi untuk menentukan proses mana yang mendapatkan giliran menggunakan CPU. Tujuannya adalah menjaga efisiensi penggunaan CPU, mengurangi waktu tunggu proses, dan memastikan setiap proses mendapat eksekusi secara adil.
+
+2. Round Robin (RR) merupakan algoritma penjadwalan yang menggunakan time quantum sebagai batas waktu bagi setiap proses. Semua proses dieksekusi secara bergiliran, sehingga algoritma ini dianggap adil. Namun, performanya sangat dipengaruhi oleh besar kecilnya quantum.
+
+3. Priority Scheduling menentukan urutan eksekusi proses berdasarkan tingkat prioritas. Proses dengan prioritas lebih tinggi dijalankan lebih dulu. Algoritma ini efisien untuk proses penting, tetapi dapat menimbulkan starvation bagi proses dengan prioritas rendah.
+
+4. Perbedaan utama kedua algoritma terletak pada fokusnya: Round Robin menekankan pemerataan waktu eksekusi untuk semua proses, sedangkan Priority Scheduling memprioritaskan proses tertentu berdasarkan tingkat kepentingannya.
+
 
 ---
 
 ## Langkah Praktikum
-1. Langkah-langkah yang dilakukan.  
-2. Perintah yang dijalankan.  
-3. File dan kode yang dibuat.  
-4. Commit message yang digunakan.
+
+1. Menyiapkan data proses yang berisi burst time, arrival time, dan priority sebagai dasar perhitungan kedua algoritma.
+
+2. Melakukan simulasi Round Robin dengan menentukan nilai time quantum, menyusun Gantt Chart, serta menghitung waiting time dan turnaround time menggunakan Excel.
+
+3. Melakukan simulasi Priority Scheduling dengan mengurutkan proses berdasarkan prioritas dan menghitung waiting time serta turnaround time melalui tabel di Excel.
+
+4. Menyusun seluruh hasil perhitungan, tabel, dan Gantt Chart ke dalam file laporan.md, kemudian menyimpan hasil screenshot ke dalam folder screenshots.
+
+5. Mengunggah seluruh hasil praktikum ke GitHub
+
 
 ---
 
@@ -52,14 +66,23 @@ Sertakan screenshot hasil percobaan atau diagram:
 ---
 
 ## Analisis
-- Jelaskan makna hasil percobaan.  
-- Hubungkan hasil dengan teori (fungsi kernel, system call, arsitektur OS).  
-- Apa perbedaan hasil di lingkungan OS berbeda (Linux vs Windows)?  
+
+Hasil percobaan menunjukkan bahwa algoritma Round Robin membuat semua proses mendapatkan giliran secara lebih merata. Setiap proses diputar berdasarkan time quantum, sehingga waktu tunggu tiap proses tidak terlalu jauh berbeda. Hal ini sesuai dengan teori bahwa Round Robin menekankan keadilan dalam pembagian waktu CPU.
+
+Untuk Priority Scheduling, proses dengan prioritas tertinggi selalu dijalankan lebih dulu. Dari hasil perhitungan, proses dengan prioritas rendah cenderung menunggu lebih lama. Ini sesuai dengan teori bahwa algoritma ini bisa menyebabkan proses tertentu tertunda karena kalah prioritas.
+
+Secara umum, hasil percobaan memperlihatkan bahwa Round Robin lebih adil, sedangkan Priority Scheduling lebih mengutamakan proses penting. Perbedaan ini menunjukkan bahwa setiap algoritma memiliki tujuan dan karakteristik masing-masing sesuai kebutuhan sistem.
+
 
 ---
 
 ## Kesimpulan
-Tuliskan 2–3 poin kesimpulan dari praktikum ini.
+
+1. Algoritma Round Robin memberikan pembagian waktu eksekusi yang lebih adil karena semua proses mendapatkan giliran secara bergantian sesuai time quantum.
+
+2. Priority Scheduling lebih memprioritaskan proses penting, tetapi dapat menyebabkan proses berprioritas rendah menunggu lebih lama.
+
+3. Perbedaan nilai waiting time dan turnaround time pada kedua algoritma menunjukkan bahwa pemilihan metode penjadwalan harus disesuaikan dengan tujuan sistem, apakah ingin menekankan keadilan atau prioritas proses.
 
 ---
 
