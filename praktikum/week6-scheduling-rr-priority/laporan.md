@@ -1,7 +1,6 @@
 
-# Laporan Praktikum Minggu [X]
-Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
-
+# Laporan Praktikum Minggu 6
+Topik: SCHEDULING RR PRIORITY
 ---
 
 ## Identitas
