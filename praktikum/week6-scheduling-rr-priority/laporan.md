@@ -57,7 +57,7 @@ dmesg | head
 
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
-![Screenshot hasil](2.png)
+![Screenshot hasil](screenshots/rr_priority.png)
 
 
 <img width="844" height="211" alt="image" src="https://github.com/user-attachments/assets/3468d0e4-8b60-4d02-a010-ea9294ef84d7" />
