@@ -60,7 +60,8 @@ Sertakan screenshot hasil percobaan atau diagram:
 ![Screenshot hasil](screenshots/example.png)
 
 
-<img width="787" height="132" alt="image" src="https://github.com/user-attachments/assets/6535d6bb-fe70-48f4-8962-992193d662f9" />
+<img width="844" height="211" alt="image" src="https://github.com/user-attachments/assets/3468d0e4-8b60-4d02-a010-ea9294ef84d7" />
+
 
 
 ---
