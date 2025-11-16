@@ -47,9 +47,9 @@ Tujuan dari praktikum ini adalah untuk memahami bagaimana algoritma Round Robin 
 ## Kode / Perintah
 Tuliskan potongan kode atau perintah utama:
 ```bash
-uname -a
-lsmod | head
-dmesg | head
+Waiting Time (WT) = waktu mulai eksekusi - Arrival Time
+Turnaround Time (TAT) = WT + Burst Time
+
 ```
 
 ---
