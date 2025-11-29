@@ -4,10 +4,11 @@ Topik:Sinkronisasi Proses dan Masalah Deadlock
 ---
 
 ## Identitas
-- **Nama**  : Muhamad Juhan 
-- **NIM**   : 250202953
-- **Kelas** : 1 IKRB
-
+|nama kelompok|nim| kelas|
+|------------------|---------------------------|------------------|
+|Muhamad Juhan | 250202953|1IKRB|
+|Virli A'inun Subroto| 250202913|1IKRB|
+|Syafi'iyah Rahmadani| 250202913|1IKRB|
 ---
 
 ## Tujuan
@@ -42,10 +43,46 @@ Semaphore dan monitor adalah mekanisme yang digunakan untuk mengontrol akses ke 
 ---
 
 ## Langkah Praktikum
-1. Langkah-langkah yang dilakukan.  
-2. Perintah yang dijalankan.  
-3. File dan kode yang dibuat.  
-4. Commit message yang digunakan.
+
+1. Persiapan Tim
+- Bentuk kelompok beranggotakan 3–4 orang.
+- Tentukan ketua dan pembagian tugas (analisis, implementasi, dokumentasi).
+2. Eksperimen 1 – Simulasi Dining Philosophers (Deadlock Version)
+
+- Implementasikan versi sederhana dari masalah Dining Philosophers tanpa mekanisme pencegahan deadlock.
+- Contoh pseudocode:
+while true:
+  think()
+  pick_left_fork()
+  pick_right_fork()
+  eat()
+  put_left_fork()
+  put_right_fork()
+- Jalankan simulasi atau analisis alur
+- Identifikasi kapan dan mengapa deadlock terjadi.
+
+3. Eksperimen 2 – Versi Fixed (Menggunakan Semaphore / Monitor)
+
+- Modifikasi pseudocode agar deadlock tidak terjadi, misalnya:
+  - Menggunakan semaphore (mutex) untuk mengontrol akses.
+  - Membatasi jumlah filosof yang dapat makan bersamaan (max 4).
+  - Mengatur urutan pengambilan garpu (misal, filosof terakhir mengambil secara terbalik).
+  - Analisis hasil modifikasi dan buktikan bahwa deadlock telah dihindari.
+4. Eksperimen 3 – Analisis Deadlock
+-  Jelaskan empat kondisi deadlock dari versi pertama dan bagaimana kondisi tersebut dipecahkan pada versi fixed.
+- Sajikan hasil analisis dalam tabel
+
+ 5. **Eksperimen 4 – Dokumentasi**
+   - Simpan hasil diskusi di:
+     ```
+     praktikum/week7-concurrency-deadlock/screenshots/
+     ```
+
+6. **Commit & Push**
+   ```bash
+   git add .
+   git commit -m "Minggu 7 - Sinkronisasi Proses & Deadlock"
+   git push origin main
 
 ---
 
