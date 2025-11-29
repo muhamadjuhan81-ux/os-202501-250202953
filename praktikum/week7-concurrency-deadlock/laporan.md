@@ -1,7 +1,6 @@
 
 # Laporan Praktikum Minggu [X]
-Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
-
+Topik:Sinkronisasi Proses dan Masalah Deadlock
 ---
 
 ## Identitas
@@ -53,9 +52,13 @@ Semaphore dan monitor adalah mekanisme yang digunakan untuk mengontrol akses ke 
 ## Kode / Perintah
 Tuliskan potongan kode atau perintah utama:
 ```bash
-uname -a
-lsmod | head
-dmesg | head
+while true:
+  think()
+  pick_left_fork()
+  pick_right_fork()
+  eat()
+  put_left_fork()
+  put_right_fork()
 ```
 
 ---
