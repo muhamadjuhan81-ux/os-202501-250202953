@@ -102,8 +102,10 @@ while true:
 
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
-![Screenshot hasil](screenshots/example.png)
-
+![Screenshot hasil](./screenshots/deadlock1.png)
+![Screenshot hasil](./screenshots/deadlock2.png)
+![Screenshot hasil](./screenshots/fixed1.png)
+![Screenshot hasil](./screenshots/fixed2.png)
 ---
 
 ## Analisis
