@@ -77,13 +77,31 @@ Sertakan screenshot hasil percobaan atau diagram:
 - Dengan kapasitas 3 frame, kedua algoritma menunjukkan performa yang cukup kompetitif, namun LRU tetap menjadi pilihan yang lebih baik untuk meminimalisir kesalahan akses memori pada dataset ini.
 
 
-| Algoritma | Jumlah Frame | Total Page Fault |
-| :--- | :---: | :---: |
-| **FIFO** | 3 | 10 |
-| **LRU** | 3 | 9 |
----
+ | Algoritma | Jumlah Page Fault | Keterangan |
+   |:--|:--:|:--|
+   | FIFO | 10 | Mengganti halaman yang pertama kali masuk ke memori tanpa melihat frekuensi akses. |
+   | LRU | 9 | Mengganti halaman yang sudah paling lama tidak digunakan/diakses oleh sistem. |
 
+- Mengapa jumlah Page Fault bisa berbeda?
 
+   Jumlah page fault berbeda karena setiap algoritma memiliki logika pemilihan korban (halaman yang akan dihapus dari memori) yang berbeda saat memori penuh:
+
+   1. FIFO hanya melihat urutan waktu masuk. Ia tidak peduli apakah halaman tersebut sering digunakan atau tidak. Hal ini terkadang menyebabkan Belady's Anomaly, di mana menambah kapasitas memori justru bisa meningkatkan jumlah page fault.
+
+   2. LRU lebih "cerdas" karena melihat sejarah penggunaan. LRU berasumsi bahwa halaman yang baru saja digunakan kemungkinan besar akan digunakan lagi dalam waktu dekat. Oleh karena itu, ia hanya menghapus halaman yang sudah benar-benar "nganggur" paling lama.
+
+- Algoritma Mana yang Lebih Efisien?
+
+   Secara umum, LRU lebih efisien daripada FIFO dalam sebagian besar kasus nyata.
+   Alasannya:
+
+ 1. Optimalitas: LRU mendekati algoritma optimal karena memanfaatkan prinsip Locality of Reference (kecenderungan program untuk mengakses data yang berdekatan dalam waktu yang berdekatan).
+
+   2. Minimasi Page Fault: Pada beban kerja yang berulang, LRU biasanya menghasilkan jumlah page fault yang lebih sedikit dibandingkan FIFO karena ia mempertahankan halaman-halaman yang sedang aktif digunakan.
+
+   3. Stabilitas: Tidak seperti FIFO, LRU tidak menderita Belady’s Anomaly, sehingga penambahan jumlah frame memori akan selalu membantu mengurangi page fault secara konsisten.
+
+   
 ---
 
 ## Kesimpulan
