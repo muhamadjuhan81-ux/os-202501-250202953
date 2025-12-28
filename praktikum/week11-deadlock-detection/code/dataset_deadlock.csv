@@ -1,0 +1,4 @@
+Proses,Allocation_R1,Allocation_R2,Request_R1,Request_R2
+P1,1,0,0,1
+P2,0,1,1,0
+P3,0,0,1,1
