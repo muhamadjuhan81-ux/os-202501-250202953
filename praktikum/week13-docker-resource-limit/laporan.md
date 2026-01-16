@@ -68,17 +68,28 @@ CMD ["python", "app.py"]
 # Membangun image dari folder code
 docker build -t week13-resource-limit .
 
-# Menjalankan dengan pembatasan RAM 200MB dan CPU 0.5
-docker run --rm --cpus="0.5" --memory="200m" week13-resource-limit
+# Menjalankan dengan limit
+docker run --rm --cpus="0.5" --memory="256m" week13-resource-limit
+
+#Menjalankan Container Tanpa Limit
+docker run --rm week13-resource-limit
+
 
 ```
 
 ---
 
 ## Hasil Eksekusi
-Sertakan screenshot hasil percobaan atau diagram:
 
 ![Screenshot hasil](screenshots/Screenshot1.png)
+
+![Screenshot hasil](screenshots/Screenshot2.png)
+
+![Screenshot hasil](screenshots/Screenshot3.png)
+
+![Screenshot hasil](screenshots/Screenshot4.png)
+
+![Screenshot hasil](screenshots/Screenshot5.png)
 
 ---
 
@@ -88,15 +99,30 @@ Berdasarkan hasil eksekusi pada terminal, terdapat perbedaan signifikan antara d
 
 - Kondisi Tanpa Limit: Program app.py berhasil menyelesaikan seluruh tugasnya, mulai dari beban CPU hingga pengalokasian memori bertahap dari 50 MB sampai mencapai target 500 MB tanpa hambatan. Hal ini menunjukkan bahwa tanpa batasan, kontainer dapat menggunakan seluruh sumber daya yang tersedia pada host.
 
-- Kondisi Dengan Limit (--memory="200m"): Saat kontainer dibatasi dengan memori 200 MB, program terhenti seketika (langsung kembali ke baris perintah) tanpa mengeluarkan output angka alokasi RAM. Ini menandakan bahwa sistem Docker mendeteksi pelanggaran penggunaan memori bahkan sebelum program sempat mencetak log pertama ke layar.
+- Kondisi Dengan Limit (--memory="256m"): Saat kontainer dibatasi dengan memori 200 MB, program terhenti seketika (langsung kembali ke baris perintah) tanpa mengeluarkan output angka alokasi RAM. Ini menandakan bahwa sistem Docker mendeteksi pelanggaran penggunaan memori bahkan sebelum program sempat mencetak log pertama ke layar.
 
 Hasil percobaan ini secara langsung membuktikan teori manajemen sumber daya pada Docker:
 
-- Implementasi Cgroups: Perintah --memory="200m" mengaktifkan fitur control groups (cgroups) pada kernel sistem operasi untuk mengawasi penggunaan RAM kontainer tersebut.
+- Implementasi Cgroups: Perintah --memory="256m" mengaktifkan fitur control groups (cgroups) pada kernel sistem operasi untuk mengawasi penggunaan RAM kontainer tersebut.
 
-- Mekanisme OOM Killed: Program app.py dirancang untuk langsung meminta alokasi memori yang besar di awal. Karena permintaan awal tersebut sudah diprediksi melebihi ambang batas 200 MB, mekanisme Out-of-Memory (OOM) Killer segera menghentikan proses kontainer demi menjaga stabilitas sistem host agar tidak terjadi crash akibat penggunaan RAM yang berlebihan oleh satu proses.
+- Mekanisme OOM Killed: Program app.py dirancang untuk langsung meminta alokasi memori yang besar di awal. Karena permintaan awal tersebut sudah diprediksi melebihi ambang batas 256 MB, mekanisme Out-of-Memory (OOM) Killer segera menghentikan proses kontainer demi menjaga stabilitas sistem host agar tidak terjadi crash akibat penggunaan RAM yang berlebihan oleh satu proses.
 
 - Efisiensi Isolasi: Percobaan ini menunjukkan bahwa isolasi sumber daya pada kontainer sangat efektif dan responsif. Docker mampu melakukan intervensi secara real-time terhadap proses yang mencoba menggunakan resource melebihi jatah yang telah ditentukan.
+
+*Table 1: Perbandingan Penggunaan CPU
+| Tanpa Limit | Dengan Limit |
+| :---: | :---: |
+| Penggunaan CPU mencapai 99.88% karena kontainer dibiarkan mengambil hampir seluruh tenaga prosesor yang tersedia. | penggunaan CPU berhasil ditekan ke angka 49.91%. Ini membuktikan bahwa pembatasan sumber daya (resource limit) tidak hanya bekerja pada memori, tapi juga efektif mengontrol beban kerja CPU agar tidak membuat host kewalahan. |
+
+
+*Tabel 2: Perbandingan Batasan RAM
+| Tanpa Limit |  Dengan Limit |
+| :---: | :---: |
+| Limit memori terlihat sangat besar yaitu 3.674 GiB (mengikuti kapasitas sistem). | Limitnya berubah drastis menjadi 256 MiB sesuai instruksi perintah Docker yang dijalankan. Meskipun penggunaan RAM saat itu kecil (4.641 MiB), sistem sudah siap menghadang jika ada lonjakan penggunaan yang melebihi batas 256 MiB tersebut |
+
+
+
+
 
 ---
 
@@ -104,9 +130,9 @@ Hasil percobaan ini secara langsung membuktikan teori manajemen sumber daya pada
 
 - Praktikum ini membuktikan bahwa Docker mampu melakukan isolasi sumber daya secara akurat menggunakan mekanisme cgroups, di mana kontainer akan dibatasi penggunaannya sesuai dengan parameter --memory dan --cpus yang ditentukan.
 
-- Penggunaan limitasi memori sangat penting untuk menjaga stabilitas sistem host; jika aplikasi melampaui batas RAM yang dialokasikan (seperti pada uji coba 200 MB), Docker akan secara otomatis menghentikan proses tersebut (OOM Killed) untuk mencegah kegagalan sistem yang lebih luas.
+- Penggunaan limitasi memori sangat penting untuk menjaga stabilitas sistem host; jika aplikasi melampaui batas RAM yang dialokasikan (seperti pada uji coba 256 MB), Docker akan secara otomatis menghentikan proses tersebut (OOM Killed) untuk mencegah kegagalan sistem yang lebih luas.
 
-- Pembuatan Dockerfile yang benar memungkinkan aplikasi berjalan secara konsisten di dalam kontainer, namun tetap fleksibel untuk diatur penggunaan sumber dayanya tanpa perlu mengubah kode program asli.
+- 
 
 ---
 
