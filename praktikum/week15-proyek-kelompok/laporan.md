@@ -117,7 +117,7 @@ Berikut adalah ringkasan prosedur demo yang dilakukan berdasarkan bukti eksekusi
 ### 3.3 Bukti Eksekusi
 
 - Skenario 1 (Scheduling Musik): Menampilkan antrean lagu seperti "Blue - Yung Kai" hingga "Double Take - Dhruv" dengan perhitungan Waiting Time dan Turnaround Time (TAT) yang presisi.
-![screenshots](screenshots/DOCKER_MUSIK.jpeg)
+![screenshots](screenshots/Docker_Build_Scheduling.jpeg)
 
 - Skenario 2 (Management RAM): Menjalankan simulasi penggantian halaman (Page Replacement) menggunakan algoritma FIFO dalam lingkungan Docker terisolasi.
 ![screenshots](screenshots/DOCKER_MENEJEMEN_RAM.jpeg)
@@ -135,7 +135,7 @@ Skenario Pengujian: Kami mensimulasikan penjadwalan pemutaran musik menggunakan 
 - Double Take – Dhruv: Waktu Datang 4, Durasi 3
 
 Hasil Output Aplikasi: Berikut adalah tabel hasil simulasi pemutaran musik yang dihasilkan oleh sistem:
-![screenshots](screenshots/SIMULATOR_MUSIK.png)
+![screenshots](screenshots/Docker_run_Scheduling.jpeg)
 
 ### Tabel Hasil Simulasi Penjadwalan (FCFS)
 
