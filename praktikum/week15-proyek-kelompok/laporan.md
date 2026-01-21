@@ -120,7 +120,8 @@ Berikut adalah ringkasan prosedur demo yang dilakukan berdasarkan bukti eksekusi
 ![screenshots](screenshots/Docker_Build_Scheduling.jpeg)
 
 - Skenario 2 (Management RAM): Menjalankan simulasi penggantian halaman (Page Replacement) menggunakan algoritma FIFO dalam lingkungan Docker terisolasi.
-![screenshots](screenshots/DOCKER_MENEJEMEN_RAM.jpeg)
+
+![screenshots](screenshots/docker_build_page_replacment.jpeg)
 
 ---
 ### 4. Hasil Pengujian dan Analisis
@@ -168,7 +169,7 @@ Hasil Output Aplikasi:
 
 Berikut adalah screnshoots hasil simulasi yang dihasilkan:
 
-![screenshots](screenshotS/MENEJEMEN_RAM.jpeg)
+![screenshots](screenshots/docker_run_page_replacment.jpeg)
 
 Berdasarkan eksekusi pada terminal, berikut adalah tabel perubahan isi RAM pada setiap langkah:
 
@@ -204,6 +205,10 @@ Analisis :
 - Kesimpulan: Meskipun sederhana dan ringan secara komputasi, FIFO kurang responsif terhadap aplikasi yang sering digunakan kembali jika aplikasi tersebut sudah "tua" di dalam antrean. Untuk meningkatkan Hit Ratio, algoritma seperti LRU (Least Recently Used) mungkin akan memberikan hasil yang lebih baik pada pola penggunaan ini.
 
 ### 5. Pembagian Peran dan Kontribusi
+kolaboratif bembagian tugas
+
+![screenshots](screenshots/comit.png)
+
 Identitas  rincian peran dan kontribusi setiap anggota tim:
 
 
