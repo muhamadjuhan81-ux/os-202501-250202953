@@ -15,7 +15,7 @@ Aplikasi berbasis terminal (CLI) ini dibuat untuk mensimulasikan dua konsep inti
     - Analogi: Antrean pemutaran lagu (Playlist). Lagu yang masuk ke antrean lebih awal akan diputar hingga selesai sebelum lagu berikutnya dimulai.
     - Output: Tabel detail yang mencakup Waktu Datang, Durasi Musik, Waktu Selesai, Turnaround Time (TAT), dan Waktu Tunggu.
 
-2. Simulasi Multitasking Laptop (Memory Management)
+2. Simulasi Multitasking Laptop (RAM Management)
 
     - Algoritma: First-In First-Out (FIFO) Page Replacement.
 
